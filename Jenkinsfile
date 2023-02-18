@@ -50,7 +50,7 @@ pipeline{
          stage('Deploy')
         {
             steps{
-           echo 'Deploy Code'
+            sh 'docker run -d -P --mount type=bind,src=/root/Addrproj/target,target=/usr/local/tomcat/webapps sampleaddrproj:v1
             }
         }
     }    
