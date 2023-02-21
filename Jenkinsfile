@@ -50,6 +50,7 @@ pipeline{
          stage('Deploy')
         {
             steps{
+                //Docker picked up existing image.
             sh 'docker run -d -P --mount type=bind,src=/root/Addrproj/target,target=/usr/local/tomcat/webapps sampleaddrproj:v1'
             }
         }
