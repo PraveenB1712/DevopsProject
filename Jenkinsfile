@@ -51,7 +51,7 @@ pipeline{
         {
             steps{
                 //Docker picked up existing image.
-            sh 'docker run -d -P sampleaddrproj:v1'
+            sh 'docker run -d -P dcaprojapp:v2'
             }
         }
     }    
